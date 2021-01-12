@@ -56,7 +56,7 @@ bot.on('message', msg => {
       .setTitle('Bot commands')
       .setColor('#e5e5e5')
       .setDescription(HelpArr)
-    return  msg.channel.send(HelpEmbed);
+    return msg.channel.send(HelpEmbed);
   }
 
   
