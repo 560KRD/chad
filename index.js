@@ -22,6 +22,7 @@ let HelpArr = [
   'monday',
 ]
 
+
 bot.on('message', msg => {
   let args = msg.content.toLowerCase().substring(process.env.PREFIX.length).split(/\s+/g);
   let text = msg.content;
