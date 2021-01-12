@@ -3,10 +3,11 @@ const app = express();
 const port = 3000;
 
 app.get("/", (req, res) => {
-  res.send("Hello World! this is \nKyle the bot");
+  res.send("Hello World! this is \nChad the bot");
 });
 
-app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`));
+app.listen(port, () => console.log(`Chad app listening at http://localhost:${port}`));
+
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 require('dotenv').config();
