@@ -184,6 +184,14 @@ bot.on('message', msg => {
   }
 
 
+  if (args[0] === 'clankers') {
+    msg.channel.send('https://cdn.discordapp.com/attachments/798733509727879198/799368974511898685/clankers.mp4').then(Smsg => {
+      Smsg.react('🤖')
+    })
+    return;
+  }
+  
+
 
 })
 
