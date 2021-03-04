@@ -184,6 +184,12 @@ bot.on('message', msg => {
   }
 
 
+ if (args[0] === 'shekel') {
+    msg.channel.send('https://cdn.discordapp.com/attachments/815874346517659668/817145528105566208/shekelboss.mp4').then(Smsg => {
+      Smsg.react('✡️')
+    })
+    return;
+  }
 
 })
 
