@@ -192,7 +192,12 @@ bot.on('message', msg => {
   }
 
 
-	
+if (args[0] === 'gregor') {
+    msg.channel.send('https://tenor.com/view/5shekels-gif-18220408').then(Smsg => {
+      Smsg.react('✡️')
+    })
+    return;
+  }	
 	
 	
 	
