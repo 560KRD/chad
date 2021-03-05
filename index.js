@@ -29,6 +29,9 @@ let HelpArr = [
   'mimir',
   'pepper',
   'monday',
+  'shekel',
+  'dice',
+  'gregor',
 ]
 
 bot.on('message', msg => {
