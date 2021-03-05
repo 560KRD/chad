@@ -65,7 +65,7 @@ bot.on('message', msg => {
     let haramLevel = (Math.floor(Math.random() * 101));
 
 
-    if (msg.author.id === '796126990981791784' || msg.author.id === '698051518754062387') haramLevel = 0
+    if (msg.author.id === '796126990981791784' || msg.author.id === '698051518754062387' || msg.author.id === '534735723027365889') haramLevel = 0
 
 
 
@@ -182,13 +182,12 @@ bot.on('message', msg => {
   }
 
 
-  if (args[0] === 'clankers') {
-    msg.channel.send('https://cdn.discordapp.com/attachments/798733509727879198/799368974511898685/clankers.mp4').then(Smsg => {
-      Smsg.react('🤖')
+ if (args[0] === 'shekel') {
+    msg.channel.send('https://cdn.discordapp.com/attachments/815874346517659668/817145528105566208/shekelboss.mp4').then(Smsg => {
+      Smsg.react('✡️')
     })
     return;
   }
-  
 
   if (args[0] === 'shekel') {
     msg.channel.send('https://cdn.discordapp.com/attachments/815874346517659668/817145528105566208/shekelboss.mp4').then(Smsg => {
@@ -214,6 +213,15 @@ bot.on('message', msg => {
 
 
 
+if (args[0] === 'gregor') {
+    msg.channel.send('https://tenor.com/view/5shekels-gif-18220408').then(Smsg => {
+      Smsg.react('✡️')
+    })
+    return;
+  }	
+	
+	
+	
 })
 
 bot.login(process.env.TOKEN);
