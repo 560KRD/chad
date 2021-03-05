@@ -198,12 +198,9 @@ bot.on('message', msg => {
 
   
  if (args[0] === 'dice') {
-  >> function rollDice() {
-    return Math.random()*6
-  }
->> rollDice()
-<- 4.3380209914241235
-
+   
+  let dice = (Math.floor(Math.random() * 7));
+  msg.channel.send(dice)
 
 
 
