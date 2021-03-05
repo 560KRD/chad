@@ -200,8 +200,14 @@ bot.on('message', msg => {
  if (args[0] === 'dice') {
    
   let dice = (Math.floor(Math.random() * 7));
-  msg.channel.send(dice)
+ 
+  let exampleEmbed = new Discord.MessageEmbed()
+  .setTitle('Dice')
+  .setColor('#e5e5e5')
+  .setDescription(`You rolled a ${dice}!`)
+  .setThumbnail(msg.author.avatarURL())
 
+  return msg.channel.send(exampleEmbed);
 
 
  }
