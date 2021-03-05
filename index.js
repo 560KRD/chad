@@ -191,13 +191,7 @@ bot.on('message', msg => {
     return;
   }
 
-	if (args[0] === 'wurfel') {
-    let würfel = (Math.floor(Math.random() * 7));
-    msg.channel.send(würfel => {
-      Smsg.react('')
-    })
-    return;
-  }
+
 	
 	
 	
