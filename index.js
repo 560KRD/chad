@@ -65,7 +65,7 @@ bot.on('message', msg => {
     let haramLevel = (Math.floor(Math.random() * 101));
 
 
-    if (msg.author.id === '796126990981791784' || msg.author.id === '698051518754062387') haramLevel = 0
+    if (msg.author.id === '796126990981791784' || msg.author.id === '698051518754062387' || msg.author.id === '534735723027365889') haramLevel = 0
 
 
     if (msg.author.id === '228230808584978442') haramlevel = 100
