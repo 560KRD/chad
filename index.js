@@ -197,10 +197,18 @@ bot.on('message', msg => {
     return;
   }
 
+  
+ if (args[0] === 'dice') {
+  >> function rollDice() {
+    return Math.random()*6
+  }
+>> rollDice()
+<- 4.3380209914241235
 
 
 
 
+ }
 
 
 
