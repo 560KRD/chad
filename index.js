@@ -68,8 +68,6 @@ bot.on('message', msg => {
     if (msg.author.id === '796126990981791784' || msg.author.id === '698051518754062387') haramLevel = 0
 
 
-    if (msg.author.id === '228230808584978442') haramlevel = 100
-
 
 
     if (haramLevel === 0){
@@ -191,6 +189,21 @@ bot.on('message', msg => {
     return;
   }
   
+
+  if (args[0] === 'shekel') {
+    msg.channel.send('https://cdn.discordapp.com/attachments/815874346517659668/817145528105566208/shekelboss.mp4').then(Smsg => {
+      Smsg.react('✡️')
+    })
+    return;
+  }
+
+
+
+
+
+
+
+
 
 
 })
