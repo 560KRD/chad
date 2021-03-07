@@ -40,7 +40,7 @@ bot.on('message', msg => {
 
   if(!text.startsWith(process.env.PREFIX)) return;
 
-  if (globalCooldown.has(msg.author.id) && (msg.author.id !== '698051518754062387' || msg.author.id !== '796126990981791784')) {
+  if (globalCooldown.has(msg.author.id) && (msg.author.id !== '796126990981791784' || msg.author.id !== '698051518754062387')) {
 		msg.channel.send('Cooldown 2 sec').then((msge) => {
 			msge.delete({ timeout: 5000 });
 		});
