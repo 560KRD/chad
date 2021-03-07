@@ -196,7 +196,7 @@ bot.on('message', msg => {
   
  if (args[0] === 'dice') {
    
-  let dice = (Math.floor(Math.random() * 7));
+  let dice = (Math.floor(Math.random() * 5+1));
  
   let exampleEmbed = new Discord.MessageEmbed()
   .setTitle('Dice')
