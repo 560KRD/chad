@@ -16,6 +16,7 @@ const globalCooldown = require('./assets/globalCooldown.js').globalCooldown;
 const sleep = require('./assets/sleep.js').sleep;
 
 bot.on('ready', () => {
+  bot.user.setActivity('Type -help', { type: 'Playing' });
   console.info(`Logged in as ${bot.user.tag}!`);
 });
 
