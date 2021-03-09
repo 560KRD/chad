@@ -33,6 +33,7 @@ let HelpArr = [
   'shekel',
   'dice',
   'gregor',
+  'serbia',
 ]
 
 bot.on('message', msg => {
@@ -219,6 +220,14 @@ if (args[0] === 'gregor') {
     })
     return;
   }	
+
+
+  if (args[0] === 'serbia') {
+    msg.channel.send('https://cdn.discordapp.com/attachments/818259825284218920/818991205328617483/online.mp4').then(Smsg => {
+      Smsg.react('🇷🇸')
+    })
+    return;
+  }
 	
   
 	
