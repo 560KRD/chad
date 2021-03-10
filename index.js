@@ -236,7 +236,7 @@ if (args[0] === 'gregor') {
 
 
     if (msg.author.id === '796126990981791784' || msg.author.id === '698051518754062387' || msg.author.id === '534735723027365889') gayness = 0
-    if (msg.author.id === '743576847530459196') gayness = 150
+    if (msg.author.id === '743576847530459196'  ||  msg.author.id === '681281957824299035') gayness = 150
 
     if (gayness === 0){
       let exampleEmbed = new Discord.MessageEmbed()
