@@ -259,14 +259,14 @@ if (args[0] === 'gregor') {
     }
 
 
-    f (gayness < 50);{
+    if (gayness < 50){
       let exampleEmbed = new Discord.MessageEmbed()
-        .setTitle('Gay Detector')
+        .setTitle('Gay detector')
         .setColor('#e5e5e5')
         .setDescription(`${gayness}%`)
         .setThumbnail(msg.author.avatarURL())
   
-        return msg.channel.send(exampleEmbed);
+      return msg.channel.send(exampleEmbed);
     }
   }
 
