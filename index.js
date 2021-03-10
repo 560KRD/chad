@@ -271,3 +271,5 @@ if (args[0] === 'gregor') {
   }
 
 })
+
+bot.login(process.env.TOKEN);
