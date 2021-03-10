@@ -230,7 +230,7 @@ if (args[0] === 'gregor') {
   }
 	
 
-  if(args[0] === 'howgay'){
+  if(args[0] === 'howgay') {
 
     let gayness = (Math.floor(Math.random() * 101));
 
@@ -259,7 +259,7 @@ if (args[0] === 'gregor') {
     }
 
 
-    f (gayness < 50){
+    f (gayness < 50);{
       let exampleEmbed = new Discord.MessageEmbed()
         .setTitle('Gay Detector')
         .setColor('#e5e5e5')
@@ -270,6 +270,4 @@ if (args[0] === 'gregor') {
     }
   }
 
-}
-
-bot.login(process.env.TOKEN);
+})
