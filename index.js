@@ -229,9 +229,47 @@ if (args[0] === 'gregor') {
     return;
   }
 	
-  
-	
 
-})
+  if(args[0] === 'howgay'){
+
+    let gayness = (Math.floor(Math.random() * 101));
+
+
+    if (msg.author.id === '796126990981791784' || msg.author.id === '698051518754062387' || msg.author.id === '534735723027365889') gayness = 0
+
+    if (gayness === 0){
+      let exampleEmbed = new Discord.MessageEmbed()
+        .setTitle('Gay detector')
+        .setColor('#e5e5e5')
+        .setDescription(`${gayness}%`)
+        .setThumbnail(msg.author.avatarURL())
+  
+        return msg.channel.send(exampleEmbed);
+  
+    }
+  
+    if (gayness > 50){
+      let exampleEmbed = new Discord.MessageEmbed()
+        .setTitle('Gay detector')
+        .setColor('#e5e5e5')
+        .setDescription(`${gayness}%`)
+        .setThumbnail(msg.author.avatarURL())
+  
+      return msg.channel.send(exampleEmbed);
+    }
+
+
+    f (gayness < 50){
+      let exampleEmbed = new Discord.MessageEmbed()
+        .setTitle('Gay Detector')
+        .setColor('#e5e5e5')
+        .setDescription(`${gayness}%`)
+        .setThumbnail(msg.author.avatarURL())
+  
+        return msg.channel.send(exampleEmbed);
+    }
+  }
+
+}
 
 bot.login(process.env.TOKEN);
