@@ -42,7 +42,7 @@ bot.on('message', msg => {
 
   if(!text.startsWith(process.env.PREFIX)) return;
 
-  if (globalCooldown.has(msg.author.id) && (msg.author.id !== '796126990981791784' || msg.author.id !== '698051518754062387')) {
+  if (globalCooldown.has(msg.author.id) && (msg.author.id !== '853409350986367018' || msg.author.id !== '698051518754062387')) {
 		msg.channel.send('Cooldown 2 sec').then((msge) => {
 			msge.delete({ timeout: 5000 });
 		});
@@ -70,7 +70,7 @@ bot.on('message', msg => {
     let haramLevel = (Math.floor(Math.random() * 101));
 
 
-    if (msg.author.id === '796126990981791784' || msg.author.id === '698051518754062387' || msg.author.id === '534735723027365889') haramLevel = 0
+    if (msg.author.id === '853409350986367018' || msg.author.id === '698051518754062387' || msg.author.id === '534735723027365889') haramLevel = 0
 
 
 
