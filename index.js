@@ -40,6 +40,10 @@ bot.on('message', msg => {
   let args = msg.content.toLowerCase().substring(process.env.PREFIX.length).split(/\s+/g);
   let text = msg.content;
 
+  if (text.toLowerCase().includes('cry about it') || (text.toLowerCase().includes('cry ab it'))) {
+		msg.channel.send('https://tenor.com/view/hd-he-said-cry-about-gif-20569679');
+	}
+
   if(!text.startsWith(process.env.PREFIX)) return;
 
   if (globalCooldown.has(msg.author.id) && (msg.author.id !== '853409350986367018' || msg.author.id !== '698051518754062387')) {
@@ -55,9 +59,7 @@ bot.on('message', msg => {
 	}, 2000);
 
 
-	if (text.includes('cry about it') || text.includes('cry ab it')) {
-		msg.channel.send('https://tenor.com/view/hd-he-said-cry-about-gif-20569679');
-	}
+
 
   if (args[0] === 'help') {
     let HelpEmbed = new Discord.MessageEmbed()
