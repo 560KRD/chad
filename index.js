@@ -44,6 +44,10 @@ bot.on('message', msg => {
 		msg.channel.send('https://tenor.com/view/hd-he-said-cry-about-gif-20569679');
 	}
 
+  if (text.toLowerCase().includes('forgor') || (text.toLowerCase().includes('forgot'))) {
+		msg.channel.send('https://cdn.discordapp.com/attachments/854341572573397022/880175781521805333/cover2.png');
+	}
+
   if(!text.startsWith(process.env.PREFIX)) return;
 
   if (globalCooldown.has(msg.author.id) && (msg.author.id !== '853409350986367018' || msg.author.id !== '698051518754062387')) {
