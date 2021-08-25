@@ -25,15 +25,15 @@ let HelpArr = [
   'help',
   'wednesday',
   'haram',
-  'dyl',
+  'callum',
   'british',
   'mimir',
   'pepper',
   'monday',
-  'shekel',
+  'macedonia',
   'dice',
-  'gregor',
-  'serbia',
+  'alide',
+  'arabs',
 ]
 
 bot.on('message', msg => {
@@ -174,9 +174,8 @@ bot.on('message', msg => {
     return;
   }
 
-  if (args[0] === 'dyl') {
-    msg.channel.send('https://cdn.discordapp.com/attachments/707451317626470455/798586756441440266/ali.mp4').then(Smsg => {
-      Smsg.react('😭')
+  if (args[0] === 'callum') {
+    msg.channel.send('https://cdn.discordapp.com/attachments/880169162322903060/880172486078136421/sheep_booty.mp4').then(Smsg => {
     })
     return;
   }
@@ -185,17 +184,15 @@ bot.on('message', msg => {
 
 
   if (args[0] === 'british') {
-    msg.channel.send('<@449282503254081537> https://cdn.discordapp.com/attachments/707451317626470455/796828973341999104/Briish_meme.mp4').then(Smsg => {
-      Smsg.react('🇬🇧')
+    msg.channel.send('<@415264412178579498> https://cdn.discordapp.com/attachments/707451317626470455/796828973341999104/Briish_meme.mp4').then(Smsg => {
     })
     return;
   }
 
 
 
-  if (args[0] === 'shekel') {
-    msg.channel.send('https://cdn.discordapp.com/attachments/757169664848691272/817334810661093406/shekelboss.mp4').then(Smsg => {
-      Smsg.react('✡️')
+  if (args[0] === 'macedonia') {
+    msg.channel.send('https://cdn.discordapp.com/attachments/880169162322903060/880170507616518174/video0-345.mp4').then(Smsg => {
     })
     return;
   }
@@ -219,17 +216,15 @@ bot.on('message', msg => {
 
 
 
-if (args[0] === 'gregor') {
-    msg.channel.send('https://tenor.com/view/5shekels-gif-18220408').then(Smsg => {
-      Smsg.react('✡️')
+if (args[0] === 'arabs') {
+    msg.channel.send('https://cdn.discordapp.com/attachments/874544698327441438/880168061267763240/arabs.mp4').then(Smsg => {
     })
     return;
   }	
 
 
-  if (args[0] === 'serbia') {
-    msg.channel.send('https://cdn.discordapp.com/attachments/818259825284218920/818991205328617483/online.mp4').then(Smsg => {
-      Smsg.react('🇷🇸')
+  if (args[0] === 'alide') {
+    msg.channel.send('https://cdn.discordapp.com/attachments/880169162322903060/880169776801013770/video0_25.mp4').then(Smsg => {
     })
     return;
   }
