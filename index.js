@@ -55,7 +55,7 @@ bot.on('message', msg => {
 	}, 2000);
 
 
-	if (text.includes('cry about it') || text.includes('cry ab it') || ) {
+	if (text.includes('cry about it') || text.includes('cry ab it')) {
 		msg.channel.send('https://tenor.com/view/hd-he-said-cry-about-gif-20569679');
 	}
 
