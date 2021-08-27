@@ -239,8 +239,8 @@ if (args[0] === 'arabs') {
     let gayness = (Math.floor(Math.random() * 101));
 
 
-    if (msg.author.id === '796126990981791784' || msg.author.id === '698051518754062387' || msg.author.id === '534735723027365889') gayness = 0
-    if (msg.author.id === '743576847530459196'  ||  msg.author.id === '681281957824299035') gayness = 150
+    if (msg.author.id === '853409350986367018' || msg.author.id === '565164846564245504' || msg.author.id === '698051518754062387' || msg.author.id === '498821610879582209') gayness = 0
+    if (msg.author.id === '751952781648330772'  ||  msg.author.id === '607256454558384158') gayness = 150
 
     if (gayness === 0){
       let exampleEmbed = new Discord.MessageEmbed()
