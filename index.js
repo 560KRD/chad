@@ -23,6 +23,7 @@ bot.on('ready', () => {
 
 let HelpArr = [
   'help',
+  'howgay',
   'wednesday',
   'haram',
   'callum',
@@ -42,6 +43,10 @@ bot.on('message', msg => {
 
   if (text.toLowerCase().includes('cry about it') || (text.toLowerCase().includes('cry ab it'))) {
 		msg.channel.send('https://tenor.com/view/hd-he-said-cry-about-gif-20569679');
+	}
+
+  if (text.toLowerCase().includes('turkey') || (text.toLowerCase().includes('turkiye') || (text.toLowerCase().includes('türkiye')))) {
+		msg.channel.send('https://tenor.com/view/turkish-turk-mad-screaming-angry-gif-16839516');
 	}
 
   if (text.toLowerCase().includes('forgor') || (text.toLowerCase().includes('forgot'))) {
