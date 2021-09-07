@@ -53,6 +53,10 @@ bot.on('message', msg => {
 		msg.channel.send('https://cdn.discordapp.com/attachments/854341572573397022/880175781521805333/cover2.png');
 	}
 
+  if (text.toLowerCase().includes('lo')) {
+		msg.channel.send('https://cdn.discordapp.com/attachments/880169162322903060/884916598455029820/Lo-Autistic.gif');
+	}
+
   if(!text.startsWith(process.env.PREFIX)) return;
 
   if (globalCooldown.has(msg.author.id) && (msg.author.id !== '853409350986367018' || msg.author.id !== '698051518754062387')) {
