@@ -38,38 +38,39 @@ let HelpArr = [
 ]
 
 bot.on('message', msg => {
+  if (msg.author.bot) return;
   let args = msg.content.toLowerCase().substring(process.env.PREFIX.length).split(/\s+/g);
   let text = msg.content;
 
   if (text.toLowerCase().includes('cry about it') || (text.toLowerCase().includes('cry ab it'))) {
-		msg.channel.send('https://tenor.com/view/hd-he-said-cry-about-gif-20569679');
-	}
+    msg.channel.send('https://tenor.com/view/hd-he-said-cry-about-gif-20569679');
+  }
 
   if (text.toLowerCase().includes('turkey') || (text.toLowerCase().includes('turkiye') || (text.toLowerCase().includes('türkiye')))) {
-		msg.channel.send('https://tenor.com/view/turkish-turk-mad-screaming-angry-gif-16839516');
-	}
+    msg.channel.send('https://tenor.com/view/turkish-turk-mad-screaming-angry-gif-16839516');
+  }
 
   if (text.toLowerCase().includes('forgor') || (text.toLowerCase().includes('forgot'))) {
-		msg.channel.send('https://cdn.discordapp.com/attachments/854341572573397022/880175781521805333/cover2.png');
-	}
+    msg.channel.send('https://cdn.discordapp.com/attachments/854341572573397022/880175781521805333/cover2.png');
+  }
 
   if (text.toLowerCase().includes('lo')) {
-		msg.channel.send('https://cdn.discordapp.com/attachments/880169162322903060/884916598455029820/Lo-Autistic.gif');
-	}
+    msg.channel.send('https://cdn.discordapp.com/attachments/880169162322903060/884916598455029820/Lo-Autistic.gif');
+  }
 
-  if(!text.startsWith(process.env.PREFIX)) return;
+  if (!text.startsWith(process.env.PREFIX)) return;
 
   if (globalCooldown.has(msg.author.id) && (msg.author.id !== '853409350986367018' || msg.author.id !== '698051518754062387')) {
-		msg.channel.send('Cooldown 2 sec').then((msge) => {
-			msge.delete({ timeout: 5000 });
-		});
-		return;
+    msg.channel.send('Cooldown 2 sec').then((msge) => {
+      msge.delete({ timeout: 5000 });
+    });
+    return;
   }
-  
+
   globalCooldown.add(msg.author.id);
-	setTimeout(() => {
-		globalCooldown.delete(msg.author.id);
-	}, 2000);
+  setTimeout(() => {
+    globalCooldown.delete(msg.author.id);
+  }, 2000);
 
 
 
@@ -82,8 +83,8 @@ bot.on('message', msg => {
     return msg.channel.send(HelpEmbed);
   }
 
-  
-  if(args[0] === 'haram'){
+
+  if (args[0] === 'haram') {
 
     let haramLevel = (Math.floor(Math.random() * 101));
 
@@ -93,24 +94,24 @@ bot.on('message', msg => {
 
 
 
-    if (haramLevel === 0){
+    if (haramLevel === 0) {
       let exampleEmbed = new Discord.MessageEmbed()
         .setTitle('Haram-O-Meter')
         .setColor('#e5e5e5')
         .setDescription(`Halalest boy🙏🙏🙏: ${haramLevel}%`)
         .setThumbnail(msg.author.avatarURL())
-  
-        return msg.channel.send(exampleEmbed);
+
+      return msg.channel.send(exampleEmbed);
     }
 
-    if (haramLevel <= 20){
+    if (haramLevel <= 20) {
       let exampleEmbed = new Discord.MessageEmbed()
         .setTitle('Haram-O-Meter')
         .setColor('#e5e5e5')
         .setDescription(`Mashallah my brother, see you at friday prayer👍👍👍: ${haramLevel}%`)
         .setThumbnail(msg.author.avatarURL())
-  
-        return msg.channel.send(exampleEmbed);
+
+      return msg.channel.send(exampleEmbed);
     }
 
 
@@ -118,43 +119,43 @@ bot.on('message', msg => {
 
 
 
-    
-    
-    if (haramLevel === 50){
+
+
+    if (haramLevel === 50) {
       let exampleEmbed = new Discord.MessageEmbed()
         .setTitle('Haram-O-Meter')
         .setColor('#e5e5e5')
         .setDescription(`Half, half ain't that bad: ${haramLevel}%`)
         .setThumbnail(msg.author.avatarURL())
-  
+
       return msg.channel.send(exampleEmbed);
     }
 
-    if (haramLevel > 50){
+    if (haramLevel > 50) {
       let exampleEmbed = new Discord.MessageEmbed()
         .setTitle('Haram-O-Meter')
         .setColor('#e5e5e5')
         .setDescription(`Astagfirullah, go pray👎👎👎: ${haramLevel}%`)
         .setThumbnail(msg.author.avatarURL())
-  
+
       return msg.channel.send(exampleEmbed);
     }
 
 
-    if (haramLevel < 50){
+    if (haramLevel < 50) {
       let exampleEmbed = new Discord.MessageEmbed()
         .setTitle('Haram-O-Meter')
         .setColor('#e5e5e5')
         .setDescription(`Mashallah my brother, see you at friday prayer👍👍👍: ${haramLevel}%`)
         .setThumbnail(msg.author.avatarURL())
-  
-        return msg.channel.send(exampleEmbed);
+
+      return msg.channel.send(exampleEmbed);
     }
   }
-  
 
 
-  
+
+
   if (args[0] === 'wednesday') {
     msg.channel.send('https://cdn.discordapp.com/attachments/752042865349230662/797593338248822825/white_girl_wednesday.mp4').then(Smsg => {
       Smsg.react('💫')
@@ -210,30 +211,30 @@ bot.on('message', msg => {
     return;
   }
 
-  
- if (args[0] === 'dice') {
-   
-  let dice = (Math.floor(Math.random() * 5+1));
- 
-  let exampleEmbed = new Discord.MessageEmbed()
-  .setTitle('Dice')
-  .setColor('#e5e5e5')
-  .setDescription(`You rolled a ${dice}!`)
-  .setThumbnail(msg.author.avatarURL())
 
-  return msg.channel.send(exampleEmbed);
+  if (args[0] === 'dice') {
 
+    let dice = (Math.floor(Math.random() * 5 + 1));
 
- }
+    let exampleEmbed = new Discord.MessageEmbed()
+      .setTitle('Dice')
+      .setColor('#e5e5e5')
+      .setDescription(`You rolled a ${dice}!`)
+      .setThumbnail(msg.author.avatarURL())
+
+    return msg.channel.send(exampleEmbed);
 
 
+  }
 
 
-if (args[0] === 'arabs') {
+
+
+  if (args[0] === 'arabs') {
     msg.channel.send('https://cdn.discordapp.com/attachments/874544698327441438/880168061267763240/arabs.mp4').then(Smsg => {
     })
     return;
-  }	
+  }
 
 
   if (args[0] === 'alide') {
@@ -241,45 +242,45 @@ if (args[0] === 'arabs') {
     })
     return;
   }
-	
 
-  if(args[0] === 'howgay') {
+
+  if (args[0] === 'howgay') {
 
     let gayness = (Math.floor(Math.random() * 101));
 
 
     if (msg.author.id === '853409350986367018' || msg.author.id === '565164846564245504' || msg.author.id === '698051518754062387' || msg.author.id === '498821610879582209') gayness = 0
-    if (msg.author.id === '751952781648330772'  ||  msg.author.id === '607256454558384158') gayness = 150
+    if (msg.author.id === '751952781648330772' || msg.author.id === '607256454558384158') gayness = 150
 
-    if (gayness === 0){
+    if (gayness === 0) {
       let exampleEmbed = new Discord.MessageEmbed()
         .setTitle('Gay detector')
         .setColor('#e5e5e5')
         .setDescription(`${gayness}%`)
         .setThumbnail(msg.author.avatarURL())
-  
-        return msg.channel.send(exampleEmbed);
-  
+
+      return msg.channel.send(exampleEmbed);
+
     }
-  
-    if (gayness > 50){
+
+    if (gayness > 50) {
       let exampleEmbed = new Discord.MessageEmbed()
         .setTitle('Gay detector')
         .setColor('#e5e5e5')
         .setDescription(`${gayness}%`)
         .setThumbnail(msg.author.avatarURL())
-  
+
       return msg.channel.send(exampleEmbed);
     }
 
 
-    if (gayness < 50){
+    if (gayness < 50) {
       let exampleEmbed = new Discord.MessageEmbed()
         .setTitle('Gay detector')
         .setColor('#e5e5e5')
         .setDescription(`${gayness}%`)
         .setThumbnail(msg.author.avatarURL())
-  
+
       return msg.channel.send(exampleEmbed);
     }
   }
